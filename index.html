@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(128, 128, 128, 0.557);
+        }
+      .main {
+        width: 40vw;
+        height: max-content;
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 10px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      p{
+        text-align: justify;
+        font-weight: bolder;
+      }
+      span{
+        color: black;
+        font-weight: 300;
+      }
+      .para{
+        width: 40vw;
+      }
+      .image{
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+      }
+      img{
+        width: 100%;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.333);
+      }
+      button{
+       padding: 10px;
+       border-radius: 10px;
+       border: none;
+       background-color: black;
+       color: white; 
+      }
+      h1{
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Random User Generater</h1>
+      <div class="image">
+        <img id="userImage" src="" alt="" />
+      </div>
+     
+      <div class="para">
+        <p>User-name :<span id="userName"></span></p>
+        <p>E-mail :<span id="userEmail"></span></p>
+        <p>Number :<span id="number"></span></p>
+       <p>Date-of-birth : <span id="userDob"></span></p>
+        <p>Gender :<span id="userGender"></span></p>
+       <p>Country : <span id="userCountry"></span></p>
+      </div>
+      <button id="btn">Generate User</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
